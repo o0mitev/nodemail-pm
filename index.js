@@ -12,7 +12,7 @@ const transporter = nodemailer.createTransport({
   pool: true,
   maxMessages: Infinity,
   maxConnections: 20,
-  host: "smtp.mailtrap.io",
+  host: "smtp.mailtrap.io", // using Mailtrap for testing  [https://mailtrap.docs.apiary.io/#]
   port: 2525,
   auth: {
     user: "c1c8ff06d98bb5",
