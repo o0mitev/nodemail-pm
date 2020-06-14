@@ -4,7 +4,9 @@ const nodemailer = require('nodemailer');
 
 // A json file with fake emails
 const emails = require('./fake_mails.json');
-let arrayOfEmails = emails.map(item => item.email);
+const emails2 = require('./MOCK_DATA.json');
+
+let arrayOfEmails = emails2.map(item => item.email);
 console.log(`Emails: ${arrayOfEmails.length}`);
 
 // A transporter object 
